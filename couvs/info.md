@@ -1,0 +1,1 @@
+An archive of image files can be downloaded at https://maisondeseditions.fr/volumes/couvs.zip

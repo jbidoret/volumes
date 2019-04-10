@@ -1,0 +1,5 @@
+# ignored files and folders
+*.pyc
+/couvs/*.jpg
+/couvs/*.png
+/publishers/
