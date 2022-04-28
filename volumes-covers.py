@@ -4,8 +4,8 @@
 # books spines
 
 # config
-csv_filepath = 'csv/volumes-le-havre.csv'
-svg_filepath = 'svg/volumes-covers.svg'
+csv_filepath = 'csv.csv'
+svg_filepath = 'arthur.svg'
 fontSize = 10
 
 # imports
@@ -25,7 +25,7 @@ publisher_y = 0
 publisher_x = 0
 margin = 10
 arthuridx = 0
-
+bookidx = 0
 for row_idx, row in enumerate(reader):
     
     
@@ -46,7 +46,7 @@ for row_idx, row in enumerate(reader):
 
     
     # start svg <g>
-    file.write( "<g id=\"book_{}\">\n".format(book_ref) ) 
+    file.write( "<g id=\"book_{}\">\n".format(bookidx) ) 
 
     px_width = float(width) * 10
     px_height = float(height) * 10 
@@ -63,6 +63,7 @@ for row_idx, row in enumerate(reader):
 
     file.write("</g>\n")
     publisher_x = publisher_x + px_width + margin
+    bookidx += 1
     
     
 file.write('</svg>')
