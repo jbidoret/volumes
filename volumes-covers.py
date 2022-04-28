@@ -64,6 +64,7 @@ for row_idx, row in enumerate(reader):
     file.write("</g>\n")
     publisher_x = publisher_x + px_width + margin
     bookidx += 1
+    arthuridx += 1
     
     
 file.write('</svg>')
