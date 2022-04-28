@@ -32,8 +32,8 @@ for row_idx, row in enumerate(reader):
     # arthur :
 
     size = row[0]
-    width = size.split("x")[0].replace(',','.')
-    height = size.split("x")[1].replace(',','.')
+    width = size.split("x")[0].replace(',','.').strip()
+    height = size.split("x")[1].replace(',','.').strip())
     if arthuridx == 20:            
         print('====')
         
